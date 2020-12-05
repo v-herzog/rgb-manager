@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Manager</title>
+    <link rel="stylesheet" href="manager.css">
+</head>
+
+<body>   
+    <h1>Manager</h1>
+
+    <select id="com-ports" onchange="changePort(this.value)">
+        <option value="">Select a port:</option>
+    </select>
+
+    <br>
+    <br>
+
+    <select id="modes" onchange="changeMode(this.value)"></select>
+
+    <select id="outputs"></select>
+
+    <br>
+    <br>
+
+    <input id="primary-color" type="color">
+
+    <input id="secundary-color" type="color">
+
+    <input id="tertiary-color" type="color">
+
+    <br>
+    <br>
+
+    <button onclick="update()">UPDATE</button>
+</body>
+
+<script src="./manager.js"></script>
+
+</html>
